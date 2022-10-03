@@ -1,0 +1,142 @@
+*, *::before, *::after { box-sizing: border-box; }
+:root { font-size: 62.5%; }
+
+
+body {
+
+	display: flex; flex-direction: column;
+	align-items: center; justify-content: center;
+
+	margin: 0; padding: 0;
+	width: 100%; height: 100vh;
+
+	background: #FAFAFC;
+
+	font: 300 normal 1.5rem/1.6 sans-serif;
+	color: #303035;
+
+}
+
+
+
+.toggle { display: none; }
+
+.toggle + label {
+
+	position: relative;
+	width: 18rem; height: 9rem;
+
+	border-radius: 4.5rem;
+	background: linear-gradient(to right, #BADC58 0%, #BADC58 33%, #E1E1E6 66%, #E1E1E6 100%);
+	background-size: 300%; background-position: right;
+
+	transition: all 500ms ease-in-out;
+
+}
+
+
+.toggle + label .head {
+
+	position: absolute;
+	top: 1.5rem; left: 1.5rem;
+
+	width: 6rem; height: 6rem;
+
+	border-radius: 50%;
+	box-shadow: 0 0.5rem 2rem 0 rgba(11, 14, 18, 0.1);
+	background: #FAFAFA;
+	background-size: 300%; background-position: right;
+
+	transition: all 500ms ease-in-out;
+
+}
+
+
+.toggle + label .head .face {
+
+	position: absolute;
+	top: 0; left: 0;
+
+	width: 6rem; height: 6rem;
+
+	border-radius: 50%;
+
+	transform: rotate(0); -webkit-transform: rotate(0);
+
+	transition: -webkit-transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out,
+	            -webkit-transform 500ms ease-in-out;
+
+}
+
+
+.toggle + label .head .face .eye {
+
+	position: absolute;
+	top: 40%;
+
+	width: .6rem; height: .6rem;
+
+	border-radius: 50%;
+	background: #303035;
+
+	content: '';
+
+}
+
+.toggle + label .head .face .eye.left  { left: 20%; }
+.toggle + label .head .face .eye.right { right: 20%; }
+
+
+.toggle + label .head .face .mouth {
+
+	position: absolute;
+	bottom: 30%; left: 50%;
+
+	width: 1.5rem; height: 1rem;
+
+	border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;
+	background: #303035;
+
+	transform: translateX(-50%); -webkit-transform: translateX(-50%);
+	overflow: hidden;
+
+	transition: -webkit-transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out,
+	            -webkit-transform 200ms ease-in-out;
+	transition-delay: 150ms;
+
+}
+
+
+.toggle + label .head .face .mouth::after {
+
+	position: absolute;
+	bottom: 0; left: 50%;
+
+	width: 1.5rem; height: .8rem;
+
+	border-radius: 50%;
+	background: pink;
+
+	transform: translate(-50%, 50%); -webkit-transform: translate(-50%, 50%);
+	transition: -webkit-transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out,
+	            -webkit-transform 200ms ease-in-out;
+	transition-delay: 150ms;
+
+	content: '';
+
+}
+
+
+
+.toggle:checked + label { background-position: left; }
+
+.toggle:checked + label .head { transform: translateX(9rem); -webkit-transform: translateX(9rem); }
+.toggle:checked + label .head .face { transform: rotate(360deg); -webkit-transform: rotate(360deg); }
+.toggle:checked + label .head .face .mouth { transform: translateX(-50%) rotate(180deg); -webkit-transform: translateX(-50%) rotate(180deg); }
+.toggle:checked + label .head .face .mouth::after { transform: translate(-50%, -80%); -webkit-transform: translate(-50%, -80%); }
