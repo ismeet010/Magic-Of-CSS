@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.bicycle {
+  width: 85rem;
+  height: 60rem;
+  position: relative;
+}
+
+@keyframes bicycleAnim {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.bicycle div {
+  position: absolute;
+}
+
+.wheel {
+  width: 30rem;
+  aspect-ratio: 1;
+  background-color: #000;
+  border-radius: 50%;
+  bottom: 0;
+  border: 0.5rem dashed #000;
+  background-clip: content-box;
+  display: grid;
+  place-items: center;
+  animation: bicycleAnim 5s infinite linear;
+}
+
+.wheel::after {
+  content: "";
+  width: 24rem;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  border: 9.5rem solid #ddd;
+  box-sizing: border-box;
+}
+
+.back-wheel {
+  right: 0;
+}
+
+.front-fork {
+  width: 3rem;
+  height: 17rem;
+  background-color: #000;
+  bottom: 15rem;
+  left: 16.5rem;
+  transform: rotateZ(20deg);
+  transform-origin: left bottom;
+}
+
+.front-fork::before {
+  content: "";
+  width: 2rem;
+  height: 5rem;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  transform: rotateZ(30deg) translateX(-1rem);
+}
+
+.tube {
+  width: 2rem;
+  height: 12rem;
+  background-color: #000;
+  left: 0.5rem;
+  top: -12rem;
+}
+
+.tube::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-color: #000;
+  position: absolute;
+  left: -0.5rem;
+  top: 0.5rem;
+}
+
+.handlebars {
+  width: 8rem;
+  height: 2rem;
+  background-color: #000;
+  top: 18rem;
+  left: 19rem;
+  transform: rotateZ(15deg);
+  perspective: 50rem;
+}
+
+.handlebars::before {
+  content: "";
+  width: 4rem;
+  aspect-ratio: 1;
+  background-color: #000;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  border-radius: 50%;
+}
+
+.handlebars::after {
+  content: "";
+  width: 30rem;
+  height: 2rem;
+  background-color: #000;
+  position: absolute;
+  left: -15.5rem;
+  transform: rotateY(-70deg);
+  border-radius: 2rem;
+}
+
+.crossbar {
+  width: 27rem;
+  height: 3.5rem;
+  background-color: #000;
+  top: 22rem;
+  left: 26rem;
+  transform: rotateZ(20deg);
+  transform-origin: left top;
+  border-radius: 0 50% 50% 0;
+}
+
+.frame-1 {
+  width: 32rem;
+  height: 3.5rem;
+  background-color: #000;
+  top: 25rem;
+  left: 26rem;
+  transform: rotateZ(45deg);
+  transform-origin: left top;
+  border-radius: 0 50% 50% 0;
+}
+
+.frame-2 {
+  width: 25rem;
+  height: 2rem;
+  background-color: #000;
+  top: 44rem;
+  left: 45rem;
+  z-index: 10;
+}
+
+.seat-tube {
+  width: 3rem;
+  height: 18.5rem;
+  background-color: #000;
+  top: 30rem;
+  left: 47rem;
+  transform: rotateZ(15deg);
+}
+
+.seat-tube::before {
+  content: "";
+  width: 2rem;
+  height: 11rem;
+  position: absolute;
+  background-color: #000;
+  top: -11rem;
+  left: 0.5rem;
+}
+
+.seat-tube::after {
+  content: "";
+  width: 2.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background-color: #000;
+  top: -3rem;
+  left: 0.25rem;
+}
+
+.seat {
+  width: 12rem;
+  height: 3rem;
+  background-color: #000;
+  top: -12rem;
+  left: -6rem;
+  transform: rotateZ(-12deg);
+  border-radius: 20% 1rem 1rem 80%;
+}
+
+.back-fork {
+  width: 2rem;
+  height: 25rem;
+  background-color: #000;
+  left: 60rem;
+  top: 26rem;
+  transform: rotateZ(-55deg);
+  z-index: 10;
+}
+
+.crank {
+  width: 10rem;
+  height: 10rem;
+  background-color: #000;
+  border-radius: 50%;
+  top: 40rem;
+  left: 40rem;
+  border: 0.3rem dashed #000;
+  background-clip: content-box;
+  animation: bicycleAnim 10s infinite linear;
+}
+
+.pedals {
+  width: 1.5rem;
+  height: 17rem;
+  background-color: #000;
+  top: 37rem;
+  left: 44rem;
+  transform: rotateZ(-12deg);
+  border-radius: 0.5rem;
+  animation: bicycleAnim 10s infinite linear;
+}
+
+.pedals::before,
+.pedals::after {
+  content: "";
+  width: 5rem;
+  height: 1.7rem;
+  background-color: #000;
+  position: absolute;
+  left: -1.8rem;
+  border-radius: 0.3rem;
+  animation: bicycleAnim 10s infinite linear reverse;
+}
+
+.pedals::before {
+  top: 0.2rem;
+}
+
+.pedals::after {
+  bottom: 0.2rem;
+}
+
+.chain {
+  width: 31.5rem;
+  height: 8.5rem;
+  border: 0.5rem solid #000;
+  top: 41rem;
+  left: 40.5rem;
+  border-radius: 5rem 50% 50% 5rem;
+  z-index: 10;
+}
