@@ -50,6 +50,7 @@ img {
 }
 .cap:hover img {
   -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 .frame {
   text-align: center;
@@ -95,6 +96,7 @@ img {
 }
 .image8 {
   -webkit-filter: brightness(50%);
+  filter: brightness(50%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -104,4 +106,5 @@ img {
 
 .image8:hover {
   -webkit-filter: brightness(100%);
+  filter: brightness(100%);
 }
