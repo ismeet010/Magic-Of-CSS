@@ -1,0 +1,110 @@
+img {
+  overflow: hidden;
+}
+
+.image1 {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.image1:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.image2:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+
+.image3:hover {
+  -webkit-filter: blur(0);
+  transition: 0.3s ease-in-out;
+  filter: blur(3px);
+}
+
+.image4:hover {
+  -webkit-filter: grayscale(0);
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+.cap {
+  position: relative;
+}
+.cap .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.cap .text h1 {
+  margin: 0;
+  color: white;
+}
+.cap:hover .text {
+  opacity: 1;
+}
+.cap:hover img {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+.frame {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  perspective: 500px;
+}
+.frame .details {
+  width: 70%;
+  height: 70%;
+  padding: 5% 8%;
+  position: absolute;
+  content: "";
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  transform-origin: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.frame:hover .details {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+
+.image7:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.image9:hover {
+  box-shadow: 0 0 0 5px #604444;
+  transition: 0.5s ease;
+}
+.image8 {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.image8:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
