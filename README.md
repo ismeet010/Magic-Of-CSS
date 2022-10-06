@@ -23,3 +23,21 @@ This is a beginner-friendly repo, where you can be as much creative as you can w
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 - Take a look at [`contributing guidelines`](Contributing.md).
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow). 
+
+## Contributors ✨
+
+**Thanks to these wonderful people ❤️**
+
+<br/>
+<div align="center">
+<a href="https://github.com/ismeet010/Magic-Of-CSS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ismeet010/Magic-Of-CSS&max=100&columns=11" width=97%/>
+</a>
+</div>
+
+<br>
+<br>
+<hr>
+<h6 align="center">© Magic-Of-CSS 2022 
+<br>
+All Rights Reserved</h6>
