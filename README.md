@@ -1,11 +1,11 @@
 ## This repo is partcipating in the [Hacktoberfest](https://hacktoberfest.com/) 2022.
 
-![](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+![](https://pbs.twimg.com/card_img/1573381706404564995/VQLma1S-?format=jpg&name=4096x4096)
 
 # Magic Of CSS
 
-<img align="left" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=Would-You-Bot&repo=json-generator&countColorcountColor&countColor=%237B1E7B"/>
-<img align="right" src="https://img.shields.io/github/repo-size/Would-You-Bot/json-generator?style=for-the-badge&logo=appveyor" alt="GitHub repo size"/>
+<img align="left" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=ismeet010&repo=Magic-Of-CSS&countColorcountColor&countColor=%237B1E7B"/>
+<img align="right" src="https://img.shields.io/github/repo-size/ismeet010/Magic-Of-CSS?style=for-the-badge&logo=appveyor" alt="GitHub repo size"/>
 
 <img align="right" alt="Json-Generator" src="https://socialify.git.ci/ismeet010/Magic-Of-CSS/image?description=1&descriptionEditable=Let%27s%20play%20with%20CSS%20and%20Learn!&font=Rokkitt&forks=1&issues=1&logo=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRFDrSTybBeG1Vnlge291vZT62gQalbldPKOQ%26usqp%3DCAU&name=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Dark" />
 
