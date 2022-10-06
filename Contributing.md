@@ -2,6 +2,14 @@
 
 This documentation contains a set of guidelines to help you during the contribution process. 
 
+# Rules for Contribution
+1. Issues will be assigned on **First Come First Service Basis**.
+2. You can create a new `issue`.
+3. Maintainer will add `hactoberfest` lable, if the issue created by you is relevant.
+4. Don't `Spam` the `PR` otherwise `spam` label can be added to your `PR`.
+5. After creating a `PR` link the issue also.
+
+
 # Submitting Contributions👩‍💻👨‍💻
 Below you will find the process and workflow used to review and merge your changes.
 
@@ -29,7 +37,7 @@ $ git rebase upstream/<branch-name>
 $ git checkout -b <branch_name>
 ```
 ## Step 4 : Work on the issue assigned
-- Work on the issue assigned to you. 
+- **Create a new folder** and work on the issue assigned to you
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:
 ```
 # To add all new files to branch branch_name
@@ -55,7 +63,7 @@ $ git push -u origin <branch_name>
 ## Step 7 : Pull Request
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
 - Then add a title to your pull request.
-- Mention the issue number in your PR.
+- Mention the **issue number in your PR.**
 - Give a brief description about the changes.
 - Your Pull Request has been submitted and will be reviewed by the owner and merged.🥳
 
