@@ -21,5 +21,5 @@ This is a beginner-friendly repo, where you can be as much creative as you can w
 
 ## Want to contribute?
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-- Take a look at [`contributing guidelines`](CONTRIBUTING.md).
+- Take a look at [`contributing guidelines`](Contributing.md).
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow). 
