@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+*{
+    margin:0rem;
+    padding:0rem;
+    font-family: 'Old Standard TT', serif;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    height: 100%;
+}
+
+body
+{
+    background-image: url('https://img.freepik.com/free-vector/realistic-studio-lights-empty-background-design_1017-27233.jpg?w=2000');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container
+{
+    background-color: rgb(255, 253, 196);
+    border-radius: 2rem;
+    padding:1.5rem;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    /* margin-left:424rem; */
+    height:30rem;
+    width:30rem;
+    text-align: center;
+    margin-top: 17rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0rem .5rem 1.5rem;
+}
+
+h1
+{
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom:4.5rem;
+    color: blue;
+}
+
+#count
+{
+    font-size: 6.0rem;
+    margin-bottom:4.0rem;
+}
+
+.row
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+#b1,#b2,#b3
+{
+    font-size: 2.0rem;
+    padding:.6rem;
+    border-radius: .5rem;
+}
+#b1
+{
+    background-color: green;
+}
+#b1:hover
+{
+    background-color: rgb(13, 226, 13);
+    transform: scale(1.1);
+}
+#b2
+{
+    background-color: rgb(205, 205, 7);
+}
+#b2:hover
+{
+    background-color: yellow;
+    transform: scale(1.1);
+}
+#b3
+{
+    background-color: red;
+}
+#b3:hover
+{
+    background-color: rgb(240, 100, 100);
+    transform: scale(1.1);
+}
+
+#history
+{
+    display: flex;
+    padding-left: 2rem;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:750px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:590px)
+{
+    html
+    {
+        font-size: 45%;
+    }
+}
+
+@media (max-width:530px)
+{
+    html
+    {
+        font-size: 30%;
+    }
+}
