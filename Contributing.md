@@ -61,11 +61,15 @@ $ git push -u origin <branch_name>
 ```
 
 ## Step 7 : Pull Request
-- Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
-- Then add a title to your pull request.
+- Go to your repository in browser. Click on `contribute` and click `open pull request`.
+- Write an appropriate comment and click `create pull request`.
+- Your Pull Request has been submitted and will be reviewed by the owner and merged.🥳
+  
+  ---
+  ### Few things to keep in mind while creating a pull request (PR):
+- Add relevant title that clearly specifies what you have done in your commit.
 - Mention the **issue number in your PR.**
 - Give a brief description about the changes.
-- Your Pull Request has been submitted and will be reviewed by the owner and merged.🥳
 
 ## Need more help?🤔
 You can refer to the following articles on basics of Git and Github in case you are stuck:
