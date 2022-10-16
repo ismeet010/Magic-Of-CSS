@@ -1,6 +1,13 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
 #bg {
-  width: 100%;
-  height: 100%;
+  width: 95vw;
+  height: 90vh;
   padding: 2rem;
   display: grid;
   place-items: center;
@@ -22,10 +29,6 @@
 }
 #flag > span:nth-child(3) {
   background-color: #138808;
-}
-#pole{
-  width:2px;
-  height:40rem;
 }
 #chakra {
   position: absolute;
