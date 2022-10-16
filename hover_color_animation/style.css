@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   gap: 64px;
   justify-content: center;
@@ -7,6 +7,7 @@
 }
 
 button {
+  outline: unset;
   background-color: unset;
   border-radius: 10px;
   height: 100px;
@@ -20,7 +21,6 @@ button {
   to {color: black;}
 }
 .reset {
-  position: absolute; 
   top: 275px;
   left: 44vw;
   border: 2px solid black;
