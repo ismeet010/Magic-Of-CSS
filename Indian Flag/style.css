@@ -1,0 +1,120 @@
+#bg {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  background-color: lavenderblush;
+}
+#flag {
+  width: 400px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+}
+
+#flag > span:nth-child(1) {
+  background-color: #ff9933;
+}
+#flag > span:nth-child(2) {
+  background-color: #fff;
+}
+#flag > span:nth-child(3) {
+  background-color: #138808;
+}
+#pole{
+  width:2px;
+  height:40rem;
+}
+#chakra {
+  position: absolute;
+  place-self: center;
+  background-color: #000080;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  display: grid;
+}
+#inner {
+  position: absolute;
+  place-self: center;
+  z-index: 3;
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: grid;
+  animation: trans 1s linear infinite;
+}
+@-webkit-keyframes trans{
+  0%, 100%{
+    transform:rotate(0deg);
+  }
+  25%{
+   transform:rotate(45deg);
+  } 
+   50%{
+    transform:rotate(135deg);
+  }
+  75%{
+    transform:rotate(90deg);
+  }
+  
+  
+  
+}
+.spike {
+  position: absolute;
+  width: 3px;
+  height: 5rem;
+  background-color: #000080;
+}
+.spike:nth-child(1) {
+  transform: rotate(255deg);
+  place-self: center;
+}
+.spike:nth-child(2) {
+  transform: rotate(90deg);
+  place-self: center;
+}
+.spike:nth-child(3) {
+  transform: rotate(105deg);
+  place-self: center;
+}
+.spike:nth-child(4) {
+  transform: rotate(120deg);
+  place-self: center;
+}
+.spike:nth-child(5) {
+  transform: rotate(135deg);
+  place-self: center;
+}
+.spike:nth-child(6) {
+  transform: rotate(150deg);
+  place-self: center;
+}
+.spike:nth-child(7) {
+  transform: rotate(165deg);
+  place-self: center;
+}
+.spike:nth-child(8) {
+  transform: rotate(180deg);
+  place-self: center;
+}
+.spike:nth-child(9) {
+  transform: rotate(195deg);
+  place-self: center;
+}
+.spike:nth-child(10) {
+  transform: rotate(210deg);
+  place-self: center;
+}
+.spike:nth-child(11) {
+  transform: rotate(225deg);
+  place-self: center;
+}
+.spike:nth-child(12) {
+  transform: rotate(240deg);
+  place-self: center;
+}
