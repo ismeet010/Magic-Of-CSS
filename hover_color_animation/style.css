@@ -1,0 +1,47 @@
+.container {
+  height: 90vh;
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  outline: unset;
+  background-color: unset;
+  border-radius: 10px;
+  height: 100px;
+  width: 130px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+@keyframes color{
+  from {color: red;}
+  to {color: black;}
+}
+.reset {
+  top: 275px;
+  left: 44vw;
+  border: 2px solid black;
+  font-size: 40px
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+.yellow {
+  background-color: yellow;
+}
+.purple {
+  background-color: purple;
+  color: white;
+}
