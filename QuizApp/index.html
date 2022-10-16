@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="startbtn">
+        <button id="start" onclick="removenadd()"> Start &nbsp; Quiz</button>
+    </div>
+
+    <div class="box">
+        <div class="qno"></div><br>
+
+        <div class="question">Question</div>
+
+        <div class="line"></div>
+
+        <div class="options">
+        <button id="optiona" onclick="clickedA()">Option A</button>
+        <button id="optionb" onclick="clickedB()">Option B</button>
+        <button id="optionc" onclick="clickedC()">Option C</button>
+        <button id="optiond" onclick="clickedD()">Option D</button>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="nav">
+            <button id="prev" onclick="previous()"><ion-icon name="arrow-back-outline" class="arrow"></ion-icon></button>
+            <button id="next" onclick="nexter()">Next</button>
+        </div>
+    </div>
+
+    <div class="emptyspace"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
