@@ -1,0 +1,36 @@
+<html>
+<body>
+    <div class="terminal">
+    <b>> terminal </b>
+         </div>
+</body>
+</html>
+<style>
+.terminal{
+    padding-bottom: 7px;
+    position: relative;
+    color:#00c2ba;
+    text-shadow:0.5px 0.5px 8px #00c2ba;
+    float:left;
+    font-size: 30px;
+  align-items: center;
+  gap: 2px;
+    
+}
+
+.terminal ::after{
+    content:" ";
+    width: 10px;
+    height: 20px;
+    background: #00c2ba;
+    display: inline-block;
+    box-shadow: 0.5px 0.5px 8px #00c2ba;
+    animation: cursor-blink 1s steps(2) infinite;
+}
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+      
+    }
+  }
+</style>
