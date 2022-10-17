@@ -1,0 +1,10 @@
+ <svg
+              width="19"
+              height="16"
+              viewBox="0 0 19 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="tick-mark"
+            >
+              <path class="elastic-line" d="M2 8.5L6.5 13L17.5 2" stroke="white" stroke-width="4" />
+            </svg>
