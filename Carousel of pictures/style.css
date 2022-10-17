@@ -1,0 +1,24 @@
+.container {
+    /* border: 2px solid black; */
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: rgb(151, 241, 33);
+    border: 5px solid black;
+}
+
+body {
+    background-color: white;
+}
+
+#next {
+    margin: 5px 20px;
+    color: lightpink;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.container {
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+}
