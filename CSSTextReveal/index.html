@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text reveal effect</title>
+		<style>
+		body{
+			--bg-color: #eea;
+			--animation-duration: 1s;
+			--animation-easing-curve: ease-in-out;
+			--animation-delay: 0s;
+			background-color: var(--bg-color)
+		}
+		.text-reveal{
+			/*
+			   This is needed for the animation to work,
+			   the text to animate must have a background.
+			   Also, this doesn't work well with images
+			   (but it works with fixed background images)
+			 */
+			background-color: var(--bg-color);
+			position: relative;
+		}
+		.text-reveal::after{
+			content: "";
+			position: absolute;
+			background: inherit;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			animation: reveal var(--animation-duration) var(--animation-delay) var(--animation-easing-curve) forwards;
+		}
+		@keyframes reveal {
+			from {
+				left: 0;
+			}
+			to {
+				left: 100%;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<h1 class="text-reveal">Text reveal effect using CSS variables, the ::after pseudo-element and a simple CSS animation</h1>
+		<p class="text-reveal">Go check the index.html file for the code!</p>
+	</body>
+</html>
