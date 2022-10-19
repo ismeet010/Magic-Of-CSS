@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tab Component</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="btn btn1 active" id="1">Home</button>
+            <button class="btn btn2" id="2">About</button>
+            <button class="btn btn3" id="3">Pricing</button>
+            <button class="btn btn3" id="4">Help</button>
+
+        </div>
+        <div class="section">
+            <div class="content content1 active">
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
+                    small river named
+                    Duden flows by their place and supplies it with the necessary.</p>
+            </div>
+            <div class="content content2">
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                    which I enjoy with my
+                    whole heart. I am alone, and feel the charm of existence in this spot, which was created for the
+                    bliss of souls like
+                    mine.
+                </p>
+            </div>
+            <div class="content content3">
+                <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced
+                    by fox whelps.
+                    Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab
+                    quick-jived waltz. Brick quiz
+                    whangs jumpy veldt fox.</p>
+            </div>
+            <div class="content content4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis odit veritatis exercitationem
+                    molestiae quos qui! Similique ad eius a. Nihil, necessitatibus vitae.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const sections = document.querySelectorAll(".content");
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                buttons.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+                btn.classList.add("active");
+                const id = btn.id;
+                sections.forEach((section) => {
+                    section.classList.remove("active");
+                });
+                const req = document.getElementsByClassName(`content${id}`);
+                req[0].classList.add("active");
+            })
+        })
+    </script>
+</body>
+
+</html>

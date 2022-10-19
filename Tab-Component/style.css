@@ -1,0 +1,109 @@
+   * {
+       padding: 0;
+       margin: 0;
+   }
+
+   ::-webkit-scrollbar {
+       display: none;
+   }
+
+   body {
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       font-family: sans-serif;
+       background-color: rgba(209, 213, 219, 0.479);
+   }
+
+   .container {
+       max-width: 640px;
+       overflow: hidden;
+       position: relative;
+       padding: 16px 20px;
+       width: 100%;
+       margin: 0 20px;
+
+   }
+
+   .tabs {
+       display: flex;
+       flex-direction: row;
+       margin: 30px 0px;
+       gap: 20px;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+   }
+
+   .btn {
+       padding: 0.50rem 1rem;
+       font-size: 1.5rem;
+       font-weight: 500;
+       cursor: pointer;
+       border: none;
+       border-radius: 6px;
+       background-color: white;
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+   }
+
+   .btn:hover {
+       background-color: rgba(0, 0, 0, 0.001);
+   }
+
+   .btn.active {
+       background-color: rgba(37, 100, 235, 0.98);
+
+       color: white;
+   }
+
+   .section {
+       max-width: 640px;
+       background-color: rgb(255, 255, 255);
+       border-radius: 8px;
+       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+   }
+
+   .content.active {
+       padding: 2rem;
+       display: block;
+   }
+
+   h2 {
+       font-size: 2rem;
+       font-weight: 600;
+       opacity: 0.8;
+       margin: 4px 0;
+   }
+
+   p {
+       font-size: 1.2rem;
+       letter-spacing: 0.2px;
+       line-height: 1.4;
+       font-weight: 400;
+   }
+
+   .content {
+       display: none;
+   }
+
+   @media screen and (max-width: 640px) {
+       .container {
+           max-width: 420px;
+           margin: 0 10px;
+       }
+
+       .tabs {
+           gap: 14px;
+       }
+
+       .btn {
+           font-size: 1.2rem;
+       }
+
+       .section {
+           max-width: 420px;
+       }
+   }
