@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Solar System</title>
+    <link rel="stylesheet" href="style.css" /> <!-- Contains most of the CSS. -->
+    <link rel="stylesheet" href="spin.css" /> <!-- Contains the spin animation. -->
+    <script src="script.js"></script> <!-- Counts how many years have passed. -->
+</head>
+<body onload="startCounter()">
+    <div id="wrapper">
+
+        <div id="sun">
+          <span class="tooltiptext">The Sun</span>
+        </div>
+      
+        <div class="circle-container1">
+          <div id="mercury" class="circle">
+            <span class="tooltiptext">Mercury</span>
+          </div>
+        </div>
+      
+        <div class="circle-container2">
+          <div id="venus" class="circle">
+            <span class="tooltiptext">Venus</span>
+          </div>
+        </div>
+      
+        <div class="circle-container3">
+          <div id="earth" class="circle">
+            <span class="tooltiptext">Earth</span>
+          </div>
+        </div>
+      
+         <div class="circle-container4">
+          <div id="mars" class="circle">
+            <span class="tooltiptext">Mars</span>
+          </div>
+        </div>
+      
+        <div class="circle-container5">
+          <div id="jupiter" class="circle">
+            <span class="tooltiptext">Jupiter</span>
+          </div>
+        </div>
+      
+        <div class="circle-container6">
+          <div id="saturn" class="circle">
+            <span class="tooltiptext">Saturn</span>
+          </div>
+          <div id="rings" class="circle"></div>
+        </div>
+      
+        <div class="circle-container7">
+          <div id="uranus" class="circle">
+            <span class="tooltiptext">Uranus</span>
+          </div>
+        </div>
+      
+         <div class="circle-container8">
+          <div id="neptune" class="circle">
+            <span class="tooltiptext">Neptune</span>
+          </div>
+        </div>
+
+       <div class="circle-container9">
+           <div id="pluto" class="circle">
+            <span class="tooltiptext">Pluto</span>
+           </div>
+      </div>
+      <div id="counter"></div>
+
+      <!-- <div id="info">
+        <ul>
+          <li>Planets and Sun are not to scale.</li>
+          <li>But I tried to make the rotation speed accurate.</li>
+          <li>Mercury rotates around the Sun every 87.97 Earth days.</li>
+          <li>Venus rotates around the Sun every 224.7 Earth days.</li>
+          <li>Earth rotates around the Sun every 365.26 Earth days. This is 3.65 seconds in the simulation.</li>
+          <li>Mars rotates around the Sun every 687 Earth days.</li>
+          <li>Jupiter rotates around the Sun every 4,332.59 Earth days.</li>
+          <li>Saturn rotates around the Sun every 10,759 Earth days.</li>
+          <li>Uranus rotates around the Sun every 30,688.5 Earth days.</li>
+          <li>Neptune rotates around the Sun every 60,182 Earth days.</li>
+          <li>Pluto rotates around the Sun every 90,560 Earth days.</li>
+        </ul>
+      </div> -->
+    </div>
+</body>
+</html>
