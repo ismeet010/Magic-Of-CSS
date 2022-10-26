@@ -1,0 +1,235 @@
+body {
+	background-color: black;
+   /* background: url("https://i0.wp.com/media.eurekalert.org/multimedia_prod/pub/web/164176_web.jpg") repeat center center fixed;
+	*/
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 25%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Hide scrollbars */
+}
+
+#wrapper {
+	margin: 0 auto;
+	position: relative;
+	top: 25%;
+	width: 40vw;
+	height: 40vw;
+}
+
+.circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5, .circle-container6, .circle-container7, .circle-container8, .circle-container9 {
+	margin: 0 auto;
+	position: absolute;
+	background: transparent;
+	width: 60vw;
+	height: 60vw;
+	width: 40vw;
+	height: 40vw;
+	pointer-events : none;
+	{
+   }
+	-webkit-animation: rotation 6s linear 0s infinite normal none;
+	{
+   }
+	-moz-animation: rotation 6s linear 0s infinite normal none;
+	{
+   }
+	-ms-animation: rotation 6s linear 0s infinite normal none;
+	{
+   }
+	-o-animation: rotation 6s linear 0s infinite normal none;
+	{
+   }
+	animation: rotation 6s linear 0s infinite normal none;
+	{
+   }
+}
+
+.circle-container1 { /*Mercury*/
+	animation: rotation .88s linear 0s infinite normal none;
+}
+
+.circle-container2 { /*Venus*/
+	animation: rotation 2.25s linear 0s infinite normal none;
+}
+
+.circle-container3 { /*Earth*/
+	animation: rotation 3.65s linear 0s infinite normal none;
+}
+
+.circle-container4 { /*Mars*/
+	animation: rotation 6.87s linear 0s infinite normal none;
+}
+.circle-container5 { /*Jupiter*/
+	animation: rotation 43.31s linear 0s infinite normal none;
+}
+.circle-container6 { /*Saturn*/
+	animation: rotation 107.47s linear 0s infinite normal none;
+}
+.circle-container7 { /*Uranus*/
+	animation: rotation 305.89s linear 0s infinite normal none;
+}
+.circle-container8 { /*Neptune*/
+	animation: rotation 598s linear 0s infinite normal none;
+}
+.circle-container9 { /*Pluto*/
+	animation: rotation 905.6s linear 0s infinite normal none;
+}
+
+#sun {
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	background: #fdc830;
+	background: -webkit-radial-gradient(circle at 1vw 1vw, #fdc830, #f37335);
+	background: radial-gradient(circle at 1vw 1vw, #fdc830, #f37335);
+	box-shadow:0 0 2vw .1vw #fdc830;
+	width: 13vw;
+	height: 13vw;
+	top: 35%;
+	left: 35%;
+}
+
+.circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	opacity: 1;
+	transform: translateY(-50%);
+	background-color: #fff;
+	box-shadow:0 0 2vw .1vw #fff;
+}
+
+#mercury {
+	transform: rotate(0deg) translateX(8vw);
+	width: 1vw;
+	height: 1vw;
+	border: .1px #AAAAAA solid;
+	background: radial-gradient(circle at 50% 50%, #868f96, #596164);
+	top: 50%;
+}
+
+#venus {
+	transform: rotate(0deg) translateX(10vw);
+	background: radial-gradient(circle at 50% 50%, #eacda3, #eacda3);
+	width: 1.3vw;
+	height: 1.3vw;
+}
+
+#earth {
+	transform: rotate(0deg) translateX(12vw);
+	background: radial-gradient(circle at 50% 50%, #5cabff, #000);
+	width: 1.4vw;
+	height: 1.4vw;
+}
+
+#mars {
+	transform: rotate(0deg) translateX(14vw);
+	background: radial-gradient(circle at 50% 50%, #ff8177, #b12a5b);
+	width: 2vw;
+	height: 2vw;
+}
+
+#jupiter {
+	transform: rotate(0deg) translateX(17vw);
+	background-image: linear-gradient(to top, #FFA500 0%, #8B0000, #FFA500, #A52A2A 100%);
+	width: 9.2vw;
+	height: 9.2vw;
+	top: 45%;
+}
+
+#saturn {
+	transform: rotate(0deg) translateX(27vw);
+	background-image: linear-gradient(to top, #fddb92, #fddb92, #A0522D, #FFDEAD, #fddb92);
+	width: 7.8vw;
+	height: 7.8vw;
+	top: 46%;
+}
+
+#rings {
+	position: absolute;
+	top: 54%;
+	left: 62%;
+	width: 12vw;
+	height: 2vw;
+	border-radius: 50%;
+	opacity: .75;
+	transform: translateY(50%);
+	background: radial-gradient(ellipse at center, #000000, #BC8F8F, #A9A9A9);
+	transform: rotate(0deg) translateX(20vw);
+	z-index: 99;
+}
+
+#uranus {
+	transform: rotate(0deg) translateX(36vw);
+	background-image: radial-gradient(circle at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+	width: 5.7vw;
+	height: 5.7vw;
+	top: 47%;
+}
+
+#neptune {
+	transform: rotate(0deg) translateX(42vw);
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	width: 5.5vw;
+	height: 5.5vw;
+	top: 47%;
+}
+
+#pluto {
+	transform: rotate(0deg) translateX(48vw);
+	background-image: radial-gradient(circle at center, #e6b980 0%, #eacda3 100%);
+	width: .9vw;
+	height: .9vw;
+}
+
+#counter {
+	position: absolute;
+	color: white;
+	bottom: 0px;
+	right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2vw;
+}
+
+#info {
+	position: absolute;
+	color: white;
+	bottom: -15vw;
+	right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1vw;
+}
+
+#sun, #mercury, #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune, #pluto {
+	cursor : pointer;
+	pointer-events: auto;
+	z-index: 99;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+#sun:hover .tooltiptext, #mercury:hover .tooltiptext, #venus:hover .tooltiptext, #earth:hover .tooltiptext, #mars:hover .tooltiptext, #jupiter:hover .tooltiptext, #saturn:hover .tooltiptext, #uranus:hover .tooltiptext, #neptune:hover .tooltiptext, #pluto:hover .tooltiptext {
+	visibility: visible;
+}
